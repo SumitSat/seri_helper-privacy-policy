@@ -4,130 +4,514 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy</title>
+
+    <meta name="description"
+          content="Privacy Policy for Seri Helper by Polymathic System Labs. Learn how location, weather information, and yield estimation data are handled.">
+
+    <meta name="robots" content="index, follow">
+
+    <title>Privacy Policy | Seri Helper</title>
+
     <style>
+        :root {
+            --primary: #176b45;
+            --primary-dark: #104c32;
+            --background: #f4f8f4;
+            --text: #26332b;
+            --muted: #65736a;
+            --border: #e0e9e1;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.7;
-            max-width: 850px;
-            margin: 40px auto;
-            padding: 20px;
-            color: #333;
-            background: #f7f9fc;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.75;
         }
-        main {
-            background: white;
-            padding: 35px;
-            border-radius: 12px;
-            box-shadow: 0 3px 15px rgba(0,0,0,0.07);
+
+        header {
+            background: linear-gradient(135deg, #176b45, #2c8b58);
+            color: white;
+            padding: 48px 20px;
+            text-align: center;
         }
-        h1, h2 { color: #173b67; }
-        h1 { border-bottom: 2px solid #e5eaf1; padding-bottom: 15px; }
-        a { color: #1769aa; }
-        footer { margin-top: 30px; color: #666; font-size: 14px; }
+
+        .brand {
+            font-size: 15px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0.9;
+        }
+
+        header h1 {
+            font-size: clamp(30px, 5vw, 44px);
+            margin: 12px 0;
+        }
+
+        header p {
+            max-width: 650px;
+            margin: 0 auto;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 35px auto;
+            padding: 0 18px;
+        }
+
+        .policy {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: clamp(22px, 5vw, 45px);
+            box-shadow: 0 8px 30px rgba(25, 70, 40, 0.05);
+        }
+
+        .notice {
+            background: #edf7ef;
+            border-left: 4px solid var(--primary);
+            padding: 16px 20px;
+            border-radius: 5px;
+            margin-bottom: 28px;
+        }
+
+        h2 {
+            color: var(--primary-dark);
+            font-size: 21px;
+            margin-top: 34px;
+            margin-bottom: 12px;
+        }
+
+        h2:first-of-type {
+            margin-top: 20px;
+        }
+
+        p, li {
+            font-size: 15px;
+        }
+
+        ul {
+            padding-left: 24px;
+        }
+
+        a {
+            color: var(--primary);
+            overflow-wrap: anywhere;
+        }
+
+        .details {
+            background: #f8faf8;
+            border: 1px solid var(--border);
+            padding: 18px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .details p {
+            margin: 5px 0;
+        }
+
+        .updated {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px 15px 35px;
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 35px 18px;
+            }
+
+            .container {
+                margin: 20px auto;
+                padding: 0 12px;
+            }
+
+            .policy {
+                border-radius: 10px;
+            }
+        }
     </style>
 </head>
-<body>
-<main>
-    <h1>Privacy Policy</h1>
 
-    <p><strong>App Name:</strong> YOUR APP NAME</p>
-    <p><strong>Developer:</strong> YOUR DEVELOPER NAME</p>
-    <p><strong>Last Updated:</strong> YYYY-MM-DD</p>
+<body>
+
+<header>
+    <div class="brand">Polymathic System Labs</div>
+    <h1>Privacy Policy</h1>
+    <p>
+        Seri Helper — Supporting sericulture farmers
+        with weather information and yield estimates.
+    </p>
+</header>
+
+<div class="container">
+<main class="policy">
+
+    <p class="updated">
+        Last updated: October 31, 2026
+    </p>
+
+    <div class="notice">
+        This Privacy Policy explains how Seri Helper accesses
+        location information, uses weather services, and handles
+        weather data and estimated yield results.
+    </div>
+
+    <div class="details">
+        <p><strong>Application:</strong> Seri Helper</p>
+        <p><strong>Developer:</strong> Polymathic System Labs</p>
+        <p>
+            <strong>Contact:</strong>
+            <a href="mailto:polymathicsystemlabs@gmail.com">
+                polymathicsystemlabs@gmail.com
+            </a>
+        </p>
+    </div>
 
     <h2>1. Introduction</h2>
+
     <p>
-        This Privacy Policy explains how YOUR APP NAME ("the App")
-        collects, uses, stores, and protects information when you
-        use the App.
+        Seri Helper is an application designed to help adult
+        users, particularly sericulture farmers, estimate
+        potential production yield using relevant weather
+        information and other inputs used by the application.
     </p>
 
-    <h2>2. Information We Collect</h2>
     <p>
-        The information collected depends on the features you use.
-        We may process information you provide, information generated
-        while using the App, and technical information required for
-        the App to function.
-    </p>
-    <p>
-        Replace this section with an accurate list of the information
-        your App collects, including information collected through
-        third-party services and software development kits.
+        This Privacy Policy describes how the application handles
+        information when you use its features. By using the
+        application, you acknowledge this policy. Where applicable,
+        we will request permissions or consent as required by law
+        and applicable platform policies.
     </p>
 
-    <h2>3. How We Use Information</h2>
+    <h2>2. Information We Access and Process</h2>
+
     <p>
-        Information is used only for the purposes described in this
-        policy, such as providing the App's features, maintaining
-        functionality, improving reliability, and responding to
-        user requests, where applicable.
+        Seri Helper does not require users to create an account
+        or log in to use its features.
     </p>
 
-    <h2>4. Data Storage and Security</h2>
+    <p>The application may access or process the following:</p>
+
+    <ul>
+        <li>
+            <strong>Device location:</strong>
+            The application uses the device's GPS location to
+            determine the relevant local weather conditions.
+            Location access is used for the application's
+            weather-related functionality.
+        </li>
+
+        <li>
+            <strong>Weather information:</strong>
+            Weather information, including temperature and
+            humidity, is retrieved for use by the application.
+        </li>
+
+        <li>
+            <strong>Yield estimates:</strong>
+            The application processes weather information and
+            relevant calculation inputs to produce approximate
+            yield estimates.
+        </li>
+
+        <li>
+            <strong>Backend information:</strong>
+            Weather information and calculated yield results
+            may be stored or processed using Supabase, the
+            application's backend service.
+        </li>
+    </ul>
+
     <p>
-        Describe where information is stored, which service providers
-        process it, who can access it, and the security measures used.
-        No method of electronic storage or transmission can be
-        guaranteed to be completely secure.
+        We do not intentionally request your name, email address,
+        or phone number for account registration because the
+        application does not require user accounts.
     </p>
 
-    <h2>5. Sharing of Information</h2>
+    <h2>3. Location Permission and Usage</h2>
+
     <p>
-        Explain whether information is shared with hosting providers,
-        analytics providers, advertising partners, or other third
-        parties. Identify relevant providers and explain their purposes.
-        If information is not shared, state this only after verifying
-        that it is accurate.
+        Seri Helper accesses your device's location when required
+        for its weather-related functionality. This allows the
+        application to determine the relevant local environmental
+        conditions for yield estimation.
     </p>
 
-    <h2>6. Data Retention and Deletion</h2>
     <p>
-        Explain how long information is retained and how users can
-        request deletion. Include any applicable account deletion
-        process and explain what happens to associated information.
+        Location access is subject to the permissions you grant
+        through your device. You can manage or revoke location
+        permission through your Android device settings.
+        If you deny or disable location access, weather-dependent
+        features may not work as intended.
     </p>
 
-    <h2>7. Children's Privacy</h2>
     <p>
-        Describe whether the App is directed at children and how
-        children's information is handled, in accordance with the
-        laws and policies applicable to the App.
+        The application is intended to use location for its
+        stated functionality, not to track users continuously.
+        This policy does not authorize background location
+        collection beyond what the application actually implements.
     </p>
 
-    <h2>8. Third-Party Services</h2>
     <p>
-        If the App uses third-party services, identify them and link
-        to their privacy policies where appropriate. Explain how
-        those services may process information.
+        The application is not intended to send raw GPS coordinates
+        directly to an external weather provider. However, the
+        location information used in a weather request may depend
+        on the application's implementation. Any locality,
+        coordinates, or other location-related query sent by
+        the application or its backend to a third-party service
+        must be disclosed and handled according to that service's
+        applicable privacy terms.
     </p>
 
-    <h2>9. Changes to This Policy</h2>
+    <h2>4. WeatherAPI</h2>
+
     <p>
-        We may update this Privacy Policy when our practices or
-        requirements change. The updated version will be published
-        on this page with a revised update date.
+        Seri Helper uses WeatherAPI to obtain weather information
+        relevant to its features.
     </p>
 
-    <h2>10. Contact Us</h2>
     <p>
-        If you have questions about this Privacy Policy or how your
-        information is handled, contact us at:
-    </p>
-    <p>
-        <strong>Developer:</strong> YOUR DEVELOPER NAME<br>
-        <strong>Email:</strong> YOUR CONTACT EMAIL
+        Weather requests may involve location-related search
+        information so that the appropriate weather conditions
+        can be retrieved. Depending on the request method and
+        backend configuration, the weather provider may process
+        request information, including technical information
+        associated with the connection.
     </p>
 
-    <footer>
-        &copy; <span id="year"></span> YOUR DEVELOPER NAME.
-        All rights reserved.
-    </footer>
+    <p>
+        WeatherAPI processes information according to its own
+        service terms and privacy practices. Users should review
+        the provider's privacy policy for details about its
+        handling of request information.
+    </p>
+
+    <p>
+        WeatherAPI website:
+        <a href="https://www.weatherapi.com/"
+           target="_blank"
+           rel="noopener noreferrer">
+            https://www.weatherapi.com/
+        </a>
+    </p>
+
+    <p>
+        We do not control the independent privacy practices of
+        third-party service providers.
+    </p>
+
+    <h2>5. Supabase and Data Storage</h2>
+
+    <p>
+        Seri Helper uses Supabase as a backend service for
+        processing and storing relevant application information.
+        The information covered by this functionality includes
+        weather information and calculated yield results,
+        as configured in the application.
+    </p>
+
+    <p>
+        The information stored, its retention period, and the
+        method used to associate records with application
+        activity depend on the application's backend
+        configuration.
+    </p>
+
+    <p>
+        Supabase may process technical information necessary
+        to provide its infrastructure and services. Its handling
+        of such information is subject to its own privacy terms.
+    </p>
+
+    <p>
+        Supabase website:
+        <a href="https://supabase.com/"
+           target="_blank"
+           rel="noopener noreferrer">
+            https://supabase.com/
+        </a>
+    </p>
+
+    <p>
+        We do not intentionally use Supabase to maintain user
+        registration accounts for Seri Helper because login
+        is not required.
+    </p>
+
+    <h2>6. How We Use Information</h2>
+
+    <p>Information processed by the application is used, as applicable, to:</p>
+
+    <ul>
+        <li>Retrieve relevant weather conditions.</li>
+        <li>Support sericulture-related yield estimation.</li>
+        <li>Store or process weather information and calculated results.</li>
+        <li>Operate, maintain, and troubleshoot application functionality.</li>
+        <li>Protect the application and its backend services.</li>
+    </ul>
+
+    <p>
+        We do not intend to use device location for advertising
+        or user tracking.
+    </p>
+
+    <h2>7. Sharing and Disclosure of Information</h2>
+
+    <p>
+        Information may be processed by service providers needed
+        to operate the application, including WeatherAPI for
+        weather information and Supabase for backend functionality.
+    </p>
+
+    <p>
+        These providers may process information necessary to
+        respond to requests or provide their services. The exact
+        information transmitted depends on the application's
+        implementation and backend configuration.
+    </p>
+
+    <p>
+        We do not sell users' personal information. We may disclose
+        information where required by applicable law or where
+        reasonably necessary to protect the security and integrity
+        of the application, subject to applicable legal requirements.
+    </p>
+
+    <h2>8. Data Retention and Deletion</h2>
+
+    <p>
+        Weather information and calculated yield results may be
+        retained in the backend for as long as necessary for the
+        application's intended functionality, subject to the
+        configured storage and retention practices.
+    </p>
+
+    <p>
+        Because users do not need accounts, there is no in-app
+        account deletion process. If you have a question about
+        information associated with your use of Seri Helper,
+        or wish to request deletion of data that can reasonably
+        be identified and deleted, contact us at
+        <a href="mailto:polymathicsystemlabs@gmail.com">
+            polymathicsystemlabs@gmail.com
+        </a>.
+    </p>
+
+    <p>
+        We will review and handle such requests in accordance
+        with applicable law, technical capabilities, and any
+        legitimate retention obligations. Data held independently
+        by third-party service providers may also be subject to
+        their respective retention policies.
+    </p>
+
+    <h2>9. Data Security</h2>
+
+    <p>
+        We take reasonable steps, appropriate to the application,
+        to protect information handled by our systems. Security
+        depends on the application's implementation, backend
+        access controls, service configuration, and other
+        technical measures.
+    </p>
+
+    <p>
+        No method of electronic transmission or storage is
+        completely secure. We cannot guarantee absolute security
+        of information processed by the application or
+        independent third-party providers.
+    </p>
+
+    <h2>10. Children's Privacy</h2>
+
+    <p>
+        Seri Helper is intended for adults and is not designed
+        specifically for children. We do not knowingly intend
+        to collect personal information from children through
+        the application.
+    </p>
+
+    <p>
+        If you believe that a child has provided personal
+        information through the application, contact us so
+        that we can review the matter and take appropriate
+        action where required.
+    </p>
+
+    <h2>11. Your Choices and Rights</h2>
+
+    <p>
+        You can manage the application's location permission
+        through your Android device settings. You may also
+        stop using the application at any time.
+    </p>
+
+    <p>
+        Depending on applicable law, you may have rights to
+        access, correct, or request deletion of certain
+        information. To submit a privacy-related request,
+        contact us using the details provided below.
+    </p>
+
+    <h2>12. Changes to This Privacy Policy</h2>
+
+    <p>
+        We may update this Privacy Policy when the application,
+        its data practices, or applicable legal requirements
+        change. Updates will be published on this page with
+        a revised date.
+    </p>
+
+    <p>
+        You should review this page periodically to remain
+        informed about how information is handled.
+    </p>
+
+    <h2>13. Contact Us</h2>
+
+    <p>
+        If you have any questions, concerns, or requests
+        regarding this Privacy Policy or the handling of
+        information by Seri Helper, contact:
+    </p>
+
+    <div class="details">
+        <p><strong>Developer:</strong> Polymathic System Labs</p>
+        <p><strong>Application:</strong> Seri Helper</p>
+        <p>
+            <strong>Email:</strong>
+            <a href="mailto:polymathicsystemlabs@gmail.com">
+                polymathicsystemlabs@gmail.com
+            </a>
+        </p>
+    </div>
+
 </main>
+</div>
 
-<script>
-    document.getElementById("year").textContent =
-        new Date().getFullYear();
-</script>
+<footer>
+    &copy; 2026 Polymathic System Labs.
+    All rights reserved.
+    <br>
+    Seri Helper Privacy Policy
+</footer>
+
 </body>
 </html>
 ```
